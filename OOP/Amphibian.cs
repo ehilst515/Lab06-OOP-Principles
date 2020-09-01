@@ -33,7 +33,7 @@
             }
         }
 
-       public class TreeFrog : Arboreal
+        public class TreeFrog : Arboreal
         {
             public override string Sounds()
             {

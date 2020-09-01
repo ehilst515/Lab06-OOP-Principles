@@ -46,6 +46,7 @@ namespace Animal.Tests
             Assert.Equal(expectedMovement, baldeagle.Movement());
             Assert.Equal(6, baldeagle.SleepHours());
             Assert.Equal("United States of America", baldeagle.Home());
+            Assert.Equal(300, baldeagle.FlightDistance);
         }
 
         [Fact]

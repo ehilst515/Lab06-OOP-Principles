@@ -42,4 +42,16 @@
     {
         public override bool Marsupial => true;
     }
+
+    public class Bat : Mamal, IFly
+    {
+        public int FlightDistance => 500;
+
+        public int FlightSpeed => 60;
+    }
+
+    //public class Bear : Mamal, ISwim
+    //{
+
+    //}
 }
