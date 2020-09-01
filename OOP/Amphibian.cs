@@ -50,8 +50,6 @@
                 return "Jug-o-rum";
             }
 
-
-            public override bool Scales => false;
         }
 
         public class Cobra : Arboreal

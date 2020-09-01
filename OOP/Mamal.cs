@@ -7,7 +7,7 @@
             return 8;
         }
 
-        public virtual bool Marsupial { get; set; }
+        public virtual bool Marsupial => false;
 
         public bool Swimmer => true;
 
