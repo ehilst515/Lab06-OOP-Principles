@@ -1,9 +1,10 @@
 ﻿using System;
 namespace OOP
 {
-    public class ISwim
+    public interface ISwim
     {
-        public int SwimDistance { get; }
-        public int SwimSpeed { get; }
+        int SwimDistance { get; }
+        int SwimSpeed { get; }
+        string Swim();
     }
 }
