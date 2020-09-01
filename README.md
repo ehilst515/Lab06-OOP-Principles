@@ -39,4 +39,4 @@ Run unit tests
 
 ![Bird](./Assets/Bird.jpg)
 
-![Kangaroo](./Assets/Kangaroo.jpg)
+![Kangaroo](./Assets/KangarooTest.jpg)
