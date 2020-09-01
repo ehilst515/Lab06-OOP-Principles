@@ -38,7 +38,7 @@
         }
     }
     
-    public class Kangeroo : Herbavor
+    public class Kangaroo : Herbavor
     {
         public override bool Marsupial => true;
     }
