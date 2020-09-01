@@ -8,18 +8,18 @@ namespace Animal.Tests
     {
 
         [Fact]
-        public void Kangeroo_has_correct_attributes()
+        public void Kangaroo_has_correct_attributes()
         {
             //Arange and Act
-            Kangeroo kangeroo = new Kangeroo();
+            Kangaroo kangaroo = new Kangaroo();
 
             //Assert
             string expectedFood = "I'll find some plants to eat!";
-            Assert.Equal(expectedFood, kangeroo.FoodSearch());
-            Assert.True(kangeroo.Marsupial);
-            Assert.True(kangeroo.Swimmer);
-            Assert.Equal("fight", kangeroo.FightOrFlight);
-            Assert.Equal(8, kangeroo.SleepHours());
+            Assert.Equal(expectedFood, kangaroo.FoodSearch());
+            Assert.True(kangaroo.Marsupial);
+            Assert.True(kangaroo.Swimmer);
+            Assert.Equal("fight", kangaroo.FightOrFlight);
+            Assert.Equal(8, kangaroo.SleepHours());
         }
 
         [Fact]
