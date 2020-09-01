@@ -1,13 +1,18 @@
-﻿using System;
-namespace OOP
+﻿namespace OOP
 {
-    public class Mamal : Animal
+    public abstract class Mamal : Animal
     {
+        public override int SleepHours()
+        {
+            return 8;
+        }
 
         public virtual bool Marsupial { get; set; }
 
         public bool Swimmer => true;
 
+        public override string FightOrFlight => "fight";
+        public override string SleepType => "dinural";
         public override string FoodSearch()
         {
             return "I'm hungry. I'll search for food.";
@@ -33,7 +38,7 @@ namespace OOP
         }
     }
     
-    class Kangeroo : Herbavor
+    public class Kangeroo : Herbavor
     {
         public override bool Marsupial => true;
     }
