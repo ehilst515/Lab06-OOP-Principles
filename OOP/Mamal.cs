@@ -41,12 +41,21 @@ namespace OOP
         }
     }
     
-    public class Kangaroo : Herbavor
+    public class Kangaroo : Herbavor, ISwim
     {
         public override bool Marsupial => true;
+
+        public int SwimDistance => 100;
+
+        public int SwimSpeed => 8;
+
+        public string Swim()
+        {
+            throw new NotImplementedException();
+        }
     }
 
-    public class Bat : Mamal, IFly, ISwim
+    public class Bat : Carnivor, IFly, ISwim
     {
         public int FlightDistance => 500;
 
@@ -62,7 +71,7 @@ namespace OOP
         }
     }
 
-    public class Bear : Mamal, ISwim
+    public class Bear : Carnivor, ISwim
     {
         public int SwimDistance => 300;
 
