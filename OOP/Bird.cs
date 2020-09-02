@@ -17,8 +17,10 @@
         public override string FightOrFlight => "flight";
     }
 
-    public class Flight : Bird
+    public abstract class Flight : Bird, IFly
     {
+        public abstract int FlightDistance { get; }
+        public abstract int FlightSpeed { get; }
         public override string Movement()
         {
             return "I flap my wings and fly";
@@ -42,12 +44,18 @@
         }
     }
 
-    public class BaldEagle : Flight
+    public class BaldEagle : Flight, IFly
     {
+        public override int FlightDistance => 300;
+
+        public override int FlightSpeed => 30;
+
         public override string Home()
         {
             return "United States of America";
         }
     }
+
+
 
 }

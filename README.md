@@ -9,6 +9,8 @@
 ## Description
 
 This is a console application that uses OOP principles to create animal objects made in different classes, and tests inheritance for proper properties and methods. 
+It also includes interfaces, which are a lighter and more flexible way of providing objects properties and methods. Interfaces can be used across many classes, such as bat being a mamal that can *swim* and *fly*.
+The swim and flight speeds and distances can be specified in every mamal.
 
 ---
 
@@ -34,6 +36,8 @@ Run unit tests
 ---
 
 ### Visuals
+
+![Tree](./Assets/AnimalTreeInterface.png)
 
 ![Animal](./Assets/Animal.jpg)
 

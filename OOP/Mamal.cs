@@ -1,4 +1,7 @@
-﻿namespace OOP
+﻿using System;
+using System.Collections.Generic;
+
+namespace OOP
 {
     public abstract class Mamal : Animal
     {
@@ -38,8 +41,45 @@
         }
     }
     
-    public class Kangaroo : Herbavor
+    public class Kangaroo : Herbavor, ISwim
     {
         public override bool Marsupial => true;
+
+        public int SwimDistance => 100;
+
+        public int SwimSpeed => 8;
+
+        public string Swim()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Bat : Carnivor, IFly, ISwim
+    {
+        public int FlightDistance => 500;
+
+        public int FlightSpeed => 60;
+
+        public int SwimDistance => 10;
+
+        public int SwimSpeed => 2;
+
+        public string Swim()
+        {
+            return "I can kind of swim!";
+        }
+    }
+
+    public class Bear : Carnivor, ISwim
+    {
+        public int SwimDistance => 300;
+
+        public int SwimSpeed => 50;
+
+        public string Swim()
+        {
+            return "I can swim!";
+        }
     }
 }
